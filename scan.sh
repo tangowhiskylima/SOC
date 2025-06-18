@@ -229,7 +229,6 @@ function SYNFLOOD()
 #######################################################################################
 ##
 ## UPDATELIST function asks the user for username/password lists to change to.
-## It is called inside the BRUTE function
 ## 
 #######################################################################################
 
@@ -441,7 +440,7 @@ done
 mkdir .scan 2>/dev/null
 sudo touch /var/log/NX220.log
 logown=$(id | awk '{print $1}' | awk -F\( '{print $2}' | tr -d ')') 
-sudo chown $logown /var/log/NX220.log ##change owner of log file to current user in order to allow writing
-CHECKAPPS nmap hydra hping3 coreutils ##coreutils is checked to ensure shuf is available
+sudo chown $logown /var/log/NX220.log 
+CHECKAPPS nmap hydra hping3 coreutils 
 SCAN
 MENU
