@@ -7,5 +7,5 @@ A home lab that simulates a network of DMZ, WAN and LAN. DMZ contains a Cowrie H
 1. [Install ELK](/Install-ELK.md)
 2. [Install Cowrie](https://docs.cowrie.org/en/latest/INSTALL.html)
 3. [Install Filebeat](/Install-Filebeat.md)
-4. [Configure ELK and Filebeat](/Config-ELK-Filebeat.md)
+4. [Configure ELK and Filebeat](/Config-ELK.md)
 5. 
