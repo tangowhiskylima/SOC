@@ -2,4 +2,6 @@ A home lab that simulates a network of DMZ, WAN and LAN. DMZ contains a Cowrie H
 
 ## Updates in progress
 
+#Setting up
 
+[Install ELK](/Install-ELK.md)
