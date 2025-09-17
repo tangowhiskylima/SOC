@@ -4,6 +4,25 @@ Get pfSense Community Edition [here](https://atxfiles.netgate.com/mirror/downloa
 
 During the installation, ensure that 3 network adapters are created on your VM to simulate the WAN, LAN and DMZ segmentation.
 
+This installation was done with VMWare Workstation so the screenshots will display how to create the network segments using VMWare Workstation. <br>
+By default the installation will create first Network Adapter and assign it to NAT, which will be our WAN segment. <br>
+2 additional network adapters will need to be added to simulate the LAN and DMZ segments. <br>
+Under VM > Settings, select Add > Network Adapter > Finish. Repeat this another time to create a total of 3 network adapters.
+
+<img width="1146" height="1020" alt="image" src="https://github.com/user-attachments/assets/483d164c-7339-4a7c-a7fc-21d179f10bba" />
+
+Under VM > Settings, select Network Adapter 2 and select LAN Segment.
+
+<img width="1105" height="877" alt="image" src="https://github.com/user-attachments/assets/971171e5-d5bc-4031-8356-8ecf1c93f5ab" />
+
+Under Global LAN Segments, select Add to create LAN and DMZ.
+
+Now you can assign Network Adapter 2 to LAN and Network Adapter 3 to DMZ.
+
+<img width="740" height="340" alt="image" src="https://github.com/user-attachments/assets/5c61daed-4b44-44b3-aac7-31ff81812a5e" /><img width="743" height="374" alt="image" src="https://github.com/user-attachments/assets/f0ac2896-8976-4bdb-a071-bb212eb9d21a" />
+
+
+
 After installation is complete, the following options should be displayed.
 
 <img width="2026" height="770" alt="image" src="https://github.com/user-attachments/assets/be703c5a-fb3c-4684-b3f6-4c38f893da53" />
