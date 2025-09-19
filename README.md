@@ -9,4 +9,4 @@ A home lab that simulates a network of DMZ, WAN and LAN. DMZ contains a Cowrie H
 3. Create another Ubuntu VM and [Install Cowrie](https://docs.cowrie.org/en/latest/INSTALL.html)
 4. [Install Filebeat](/Install-Filebeat.md)
 5. [Configure ELK](/Config-ELK.md)
-6. 
+6. [Install Elastic-agent](/Install-Elastic-agent.md)
