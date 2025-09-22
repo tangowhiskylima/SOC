@@ -83,11 +83,21 @@ Configure Kibana for remote access. The config file can be found at /etc/kibana/
 
 <img width="519" height="301" alt="image" src="https://github.com/user-attachments/assets/c0a5abd3-0d74-4d4d-a0f0-462dd7485b6f" />
 
-Open a browser and access the kibana page at http://IP:5601. You should see an enrollment page asking for a token.
+We will then create a port forward rule so that we can access the Kibana Login page from our host machine. If you do not wish to do that, you can setup another VM in the LAN segment that is able to run browser applications.
+
+Login to pfSense Web UI and under Firewall, select NAT
+
+<img width="537" height="254" alt="image" src="https://github.com/user-attachments/assets/ed6c52bb-195b-4745-b157-07961834bef4" />
+
+Click Add to add a new port forwarding rule.
+
+<img width="1170" height="1170" alt="image" src="https://github.com/user-attachments/assets/d95d6643-430a-4e6f-944e-b9a9f51d9fb3" />
+
+Open a browser and access the kibana page at http://WAN IP:5601. You should see an enrollment page asking for a token.
 
 <img width="863" height="573" alt="image" src="https://github.com/user-attachments/assets/8cfa32a2-34b1-4d9b-a200-74c010180ddd" />
 
-Run the command to generate a token.
+Run the command from ELK VM to generate a token.
 
 ` /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana `
 
