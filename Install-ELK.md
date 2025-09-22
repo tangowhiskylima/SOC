@@ -56,6 +56,29 @@ A valid elasticsearch installation will display an output similar to the followi
 
 <img width="843" height="449" alt="image" src="https://github.com/user-attachments/assets/451d7293-30ed-4a8b-8ec9-5bd899e3670e" />
 
+Now place the ELK VM under the LAN segment. For VMWare Workstation, go to VM > Settings > Network Adapter. Select LAN Segment and LAN from the dropdown list.
+
+<img width="815" height="774" alt="image" src="https://github.com/user-attachments/assets/d829201c-6c4f-4691-918c-08b0285e625d" />
+
+Now we will make create a netplan configuration file to set a static IP address for the ELK server. Create a 00-network.yaml file under /etc/netplan with ` sudo nano /etc/netplan/00-network.yaml `
+
+```
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens33:
+      dhcp4: no
+      addresses:
+        - 172.16.50.99/24
+      routes:
+      - to: default
+        via: 172.16.50.1
+      nameservers:
+        addresses: [172.16.50.1]
+```
+Save the file and run the commands ` sudo netplan try ` and ` sudo netplan apply `
+
 Configure Kibana for remote access. The config file can be found at /etc/kibana/kibana.yml. Uncomment server.port and server.host. Replace server.host with the IP address of the ELK VM.
 
 <img width="519" height="301" alt="image" src="https://github.com/user-attachments/assets/c0a5abd3-0d74-4d4d-a0f0-462dd7485b6f" />
