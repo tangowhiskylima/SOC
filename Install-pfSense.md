@@ -106,5 +106,9 @@ Click Save and then Apply Changes.
 
 <img width="1065" height="145" alt="image" src="https://github.com/user-attachments/assets/627ac2c1-f29c-4116-96e0-9e721e8824d6" />
 
+Enable DNS Query Forwarding Mode to ensure that any DNS queries are forwarded to the DNS servers specified earlier. Access this via Services > DNS Resolver. Scroll down and ensure DNS Query Forwarding is checked.
+
+<img width="1273" height="168" alt="image" src="https://github.com/user-attachments/assets/616eca25-f10f-47df-8ffb-c8cbe1744662" />
+
 This would conclude the initial setup of the pfSense firewall.
 
