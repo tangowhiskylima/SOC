@@ -38,6 +38,13 @@ You need to switch it to logstash format and copy the value into the output sect
 
 <img width="685" height="546" alt="image" src="https://github.com/user-attachments/assets/c186ee42-faea-403e-ba1c-d570ea476457" />
 
+Create firewall rule to allow Cowrie VM to send logs from DMZ to ELK VM on LAN. <br>
+Login to pfSense Web UI and click on Firewall > Rules. Select OPT1 interface which is our DMZ. <br>
+Create a Pass rule for TCP protocol with source address as Cowrie VM IP Address. <br>
+Destination IP Address will be ELK VM IP address and the port will be what you have specified in the logstash config file. <br>
+Choose if you wish to log packets handled by this rule and enter a description for this rule. 
+Click Save and apply changes.
 
+<img width="1138" height="1197" alt="image" src="https://github.com/user-attachments/assets/70671c89-cd09-4434-b1a4-1928fa44f057" />
 
 
