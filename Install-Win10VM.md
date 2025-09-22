@@ -55,14 +55,10 @@ Click the Find function at the right side of the screen and search for the usern
 
 ## Set up Elastic Agent for Windows Events
 
-Log in to the Kibana Webpage and go to Management > Integrations. Search for Windows.
-
-<img width="2333" height="655" alt="image" src="https://github.com/user-attachments/assets/47f87026-e6ff-42a4-a9bd-9d0de0d91a8f" />
-
+Log in to the Kibana Webpage and go to Management > Integrations. Search for Windows. <br>
 We can select the non-custom Windows option for now then click Add Windows.
 
 <img width="2343" height="714" alt="image" src="https://github.com/user-attachments/assets/34768053-df9a-469c-950d-2da0ff2eb4dc" />
-<img width="2517" height="461" alt="image" src="https://github.com/user-attachments/assets/47db886d-bc74-4da2-9ebe-da09c45d1f9a" />
 
 You will see the Integration configuration page. Scroll down and review the events that will be collected. <br>
 Ensure Sysmon Operational is enabled then click Save and Continue. Select Add Elastic Agent to your hosts.
