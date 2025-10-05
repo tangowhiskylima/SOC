@@ -62,7 +62,7 @@ Take note of the rule preview on the right hand side. This allows us to test the
 
 <img width="2535" height="915" alt="image" src="https://github.com/user-attachments/assets/e3a4cbd9-3d46-4ad7-86ce-dee0467de1c2" />
 
-### Viewing Alerts
+# Viewing Alerts
 
 <br>When the rule is activated, in this case every 3 mins, the alerts can be viewed under Security > Alerts.
 
