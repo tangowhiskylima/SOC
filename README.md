@@ -23,7 +23,7 @@ We can control the time frame we wish to see events for by selecting the appropr
 
 <img width="2550" height="484" alt="image" src="https://github.com/user-attachments/assets/a3d629b4-2d2e-406e-a97a-0cbaa9064b4b" />
 
-On the left hand side, we are able to create different data views to view different logs. For instance, selecting pfsense will only display pfsense logs.
+On the left hand side, we are able to create different data views to view different logs. For instance, selecting pfsense will only display pfsense logs. This allows us to limit the scope of the logs to search.
 
 <img width="1126" height="527" alt="image" src="https://github.com/user-attachments/assets/9a35b07c-69d3-461c-9ff4-7cdeba7047eb" />
 
