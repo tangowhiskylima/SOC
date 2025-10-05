@@ -1,5 +1,8 @@
 A home lab that simulates a network of DMZ, WAN and LAN. DMZ contains a Cowrie Honeypot, LAN consists of an ELK stack within an Ubuntu 22.04 VM with a Win10 VM. WAN will be simulated via the host machine and running a pfSense firewall VM to simulate the necessary network segmentation. This project runs multiple VMs at the same time so it is recommended to have at least 24GB to 32GB of RAM for smooth operations. 
 
+<br>A simple bash script is also included to run scans against a host or network of hosts to detect open ports and allow the user to choose between DoS or brute force attacks on SSH.
+<br>[Run Script](/Run-scan.md)
+
 # Updates in progress
 
 ## Setting up
