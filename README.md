@@ -15,16 +15,37 @@ A home lab that simulates a network of DMZ, WAN and LAN. DMZ contains a Cowrie H
 
 ## Navigating ELK
 
-To view events that were forwarded by Beats and pfSense, login to the Kibana webpage, under the menu, select Discover.
+<br>To view events that were forwarded by Beats and pfSense, login to the Kibana webpage, under the menu, select Discover.
 
 <img width="2552" height="486" alt="image" src="https://github.com/user-attachments/assets/c1757bda-770a-4e53-a05b-b34430f773d6" />
 
-We can control the time frame we wish to see events for by selecting the appropriate time frame on the right.
+<br>We can control the time frame we wish to see events for by selecting the appropriate time frame on the right.
 
 <img width="2550" height="484" alt="image" src="https://github.com/user-attachments/assets/a3d629b4-2d2e-406e-a97a-0cbaa9064b4b" />
 
-On the left hand side, we are able to create different data views to view different logs. For instance, selecting pfsense will only display pfsense logs. This allows us to limit the scope of the logs to search.
+<br>On the left hand side, we are able to create different data views to view different logs. For instance, selecting pfsense will only display pfsense logs. This allows us to limit the scope of the logs to search.
 
 <img width="1126" height="527" alt="image" src="https://github.com/user-attachments/assets/9a35b07c-69d3-461c-9ff4-7cdeba7047eb" />
 
+<br>For instance, in our earlier configuration, Cowrie logs were indexed as project-logs. The data view can be limited to the particular index to show only logs from Cowrie.
+
+<img width="2554" height="778" alt="image" src="https://github.com/user-attachments/assets/56d455ca-b220-4f73-b582-e2b737043c56" />
+
+<br>Once you select the created data view, the events will be limited to only Cowrie related events, allowing you to focus your search.
+
+<img width="2547" height="1272" alt="image" src="https://github.com/user-attachments/assets/35d06f81-08e3-449a-bb67-c2bccda53412" />
+
+<br>Searching for failed login attempts.
+
+<img width="2547" height="1272" alt="image" src="https://github.com/user-attachments/assets/2878de2b-3b18-435f-9ed0-5a562ccd145f" />
+
+<br>Let's search for failed windows login by using Windows Security Event Code 4625.
+<br>Type in ` event.code: 4625 ` in the query bar.
+
+<img width="2546" height="1240" alt="image" src="https://github.com/user-attachments/assets/3bbbaea0-0658-4deb-872f-21a8c5eac22d" />
+
+<br>If there are many users with failed login attempts and you wish to narrow down on one, the query can be combined using the AND operator.
+<br>` event.code: 4625 AND user.name: IEUser `
+
+<img width="2550" height="1162" alt="image" src="https://github.com/user-attachments/assets/5e63c8ac-f9e2-4808-b117-da0a7b95e292" />
 
