@@ -35,7 +35,7 @@ A home lab that simulates a network of DMZ, WAN and LAN. DMZ contains a Cowrie H
 
 <img width="2547" height="1272" alt="image" src="https://github.com/user-attachments/assets/35d06f81-08e3-449a-bb67-c2bccda53412" />
 
-<br>Searching for failed login attempts.
+<br>Searching for failed login attempts on Cowrie using ` honeypot.eventid: cowrie.login.failed `
 
 <img width="2547" height="1272" alt="image" src="https://github.com/user-attachments/assets/2878de2b-3b18-435f-9ed0-5a562ccd145f" />
 
