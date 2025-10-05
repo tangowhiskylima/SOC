@@ -59,3 +59,6 @@ A home lab that simulates a network of DMZ, WAN and LAN. DMZ contains a Cowrie H
 
 <img width="2554" height="1190" alt="image" src="https://github.com/user-attachments/assets/63868a20-1054-4e2c-a37a-e08096a9b452" />
 
+<br>This concludes using the Kibana Query Language to manually search for events.
+<br>This process can be automated by creating rules using the search queries created and viewing them as alerts in the Alerts Dashboard.
+<br>[Creating Rules](/Create-Alerts.md)
