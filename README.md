@@ -49,3 +49,13 @@ A home lab that simulates a network of DMZ, WAN and LAN. DMZ contains a Cowrie H
 
 <img width="2550" height="1162" alt="image" src="https://github.com/user-attachments/assets/5e63c8ac-f9e2-4808-b117-da0a7b95e292" />
 
+<br> Multiple conditions can be combined such as limiting to one endpoint's IP, one user account and searching for successful logins (code 4624).
+` event.code: 4624 AND user.name: * and host.ip: 172.16.50.10 `
+
+<img width="2539" height="912" alt="image" src="https://github.com/user-attachments/assets/7914f38e-6e0e-41d3-a9fc-d480af7272ab" />
+
+<br>Running of particular processes can also be displayed using ` process.name: {processname} AND event.action: "Process creation"` .
+<br>In this case, the search is used to display the process PING.EXE
+
+<img width="2554" height="1190" alt="image" src="https://github.com/user-attachments/assets/63868a20-1054-4e2c-a37a-e08096a9b452" />
+
